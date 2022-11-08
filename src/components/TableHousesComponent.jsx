@@ -28,7 +28,7 @@ export class TableHousesComponent extends React.Component {
     }
 
     getTableBWithoutDuplictaes() {
-        axios.get(`${API_URL}/houses/get-table-b-without-duplicates`)
+        axios.get(`${API_URL}/houses/get-table-b-without-duplicates-alternative`)
         .then(res => {
             const housesList3 = res.data;
             this.setState({ housesList3 });
